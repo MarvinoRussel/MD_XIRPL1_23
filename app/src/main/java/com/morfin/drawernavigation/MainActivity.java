@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.layout_for_fragment, new HomeFragment())
                 .commit();
+        getSupportActionBar().setTitle("Comany Profiler Bar");
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -100,10 +101,12 @@ public class MainActivity extends AppCompatActivity
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.layout_for_fragment, new HomeFragment())
                     .commit();
+            getSupportActionBar().setTitle("Comany Profiler Bar");
         } else if (id == R.id.nav_gallery) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.layout_for_fragment, new GalleryFragment())
                     .commit();
+            getSupportActionBar().setTitle("Galeri");
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_web) {
